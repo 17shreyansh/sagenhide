@@ -85,18 +85,18 @@ const OurInfrastructure = () => {
       </div>
 
       {/* Truly Clean Materials Section */}
-      <div style={{ position: "relative", width: "100%", height: isMobile ? "40vh" : "80vh", overflow: "hidden" }}>
+      <div style={{ position: "relative", width: "100%", height: "40vw", overflow: "hidden" }}>
         <img
           src={trulyPouch}
           alt="Truly Clean Background"
           style={{
-            width: isMobile ? "200px" : "800px",
+            width: "50vw",
             height: "100%",
             objectFit: "contain",
             position: "absolute",
-            right: isMobile ? "0" : "0",
-            left: isMobile ? "auto" : "auto",
-            bottom: isMobile ? "10%" : "20%",
+            right:  "0",
+            left:  "auto",
+            bottom: "20%",
           }}
         />
 
@@ -110,7 +110,7 @@ const OurInfrastructure = () => {
         >
           <h1
             style={{
-              fontSize: isMobile ? "60px" : "250px",
+              fontSize: "20vw",
               fontWeight: 200,
               fontFamily: "The Seasons",
               color: "#1E1E1E",
@@ -131,11 +131,11 @@ const OurInfrastructure = () => {
         >
           <h1
             style={{
-              fontSize: isMobile ? "45px" : "150px",
+              fontSize: "10vw",
               fontWeight: 200,
               fontFamily: "The Seasons, serif",
               color: "#1E1E1E",
-              margin: isMobile ? "10px" : "10px 200px",
+              margin:  "10px ",
               lineHeight: "1",
               textAlign: "center",
             }}
@@ -198,10 +198,11 @@ const OurInfrastructure = () => {
               src={modelBag}
               alt="Model with bag"
               style={{
-                width: isMobile ? "100%" : "60%",
+                width:  "45vh",
                 display: "block",
                 marginLeft: "auto",
                 objectFit: "contain",
+                marginRight: isMobile ? -15: 0,
               }}
             />
           </Col>

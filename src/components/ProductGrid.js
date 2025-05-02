@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Grid } from "antd";
 import p1 from "../assets/p1.jpg";
 import p2 from "../assets/p2.jpg";
 import p3 from "../assets/p3.jpg";
@@ -11,11 +11,20 @@ const products = [
   { img: p3, title: "Be-spoke", subtitle: "leather items" },
   { img: p4, title: "Corporate Gifting", subtitle: "& Merchandise" },
 ];
-
+const { useBreakpoint } = Grid;
 const ProductGrid = () => {
+  const screens = useBreakpoint();
+
+  const isMobile = !screens.md;
   return (
     <div className="product-grid-container">
-      <h2 className="product-grid-heading">Products</h2>
+      <h2 style={{
+        fontSize: isMobile ? "36px" : "60px",
+        fontWeight: 500,
+        textAlign: "right",
+        margin: isMobile ? "1rem" : "2rem 3rem 1rem",
+        fontFamily: "Montserrat",
+      }}>Products</h2>
 
       <Row gutter={[16, 16]}>
         {products.map((product, index) => (
