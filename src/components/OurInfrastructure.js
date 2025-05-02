@@ -96,18 +96,18 @@ const OurInfrastructure = () => {
       </div>
 
       {/* Truly Clean Materials Section */}
-      <div style={{ position: "relative", width: "100%", height: isMobile ? "400px" : "80vh", overflow: "hidden" }}>
+      <div style={{ position: "relative", width: "100%", height: isMobile ? "40vh" : "80vh", overflow: "hidden" }}>
         <img
           src={trulyPouch}
           alt="Truly Clean Background"
           style={{
-            width: isMobile ? "100%" : "800px",
+            width: isMobile ? "200px" : "800px",
             height: "100%",
             objectFit: "contain",
             position: "absolute",
-            right: isMobile ? "auto" : "0",
-            left: isMobile ? "0" : "auto",
-            bottom: isMobile ? "0" : "20%",
+            right: isMobile ? "0" : "0",
+            left: isMobile ? "auto" : "auto",
+            bottom: isMobile ? "10%" : "20%",
           }}
         />
 
@@ -125,7 +125,7 @@ const OurInfrastructure = () => {
               fontWeight: 200,
               fontFamily: "The Seasons",
               color: "#1E1E1E",
-              margin: isMobile ? "0" : 60,
+              margin: isMobile ? "10px" : 60,
               lineHeight: "1",
             }}
           >
@@ -142,7 +142,7 @@ const OurInfrastructure = () => {
         >
           <h1
             style={{
-              fontSize: isMobile ? "36px" : "150px",
+              fontSize: isMobile ? "45px" : "150px",
               fontWeight: 200,
               fontFamily: "The Seasons, serif",
               color: "#1E1E1E",
