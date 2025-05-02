@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import { MenuOutlined } from '@ant-design/icons';
 import Logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -31,8 +31,6 @@ const Navbar = () => {
 
   return (
     <>
-    
-
       <div
         style={{
           height: 80,
@@ -67,26 +65,28 @@ const Navbar = () => {
         </div>
 
         <div className="mobile-navbar" style={{ display: 'none', alignItems: 'center' }}>
-          <MenuOutlined onClick={() => setVisible(true)} style={{ fontSize: 28, color: '#1E1E1E' }} />
+          <MenuOutlined
+            onClick={() => setVisible(!visible)} // Toggle visibility on click
+            style={{ fontSize: 28, color: '#1E1E1E' }}
+            className={visible ? 'open' : ''} // Add open class for animation
+          />
         </div>
       </div>
 
-      {visible && (
-        <div className="drawer">
-          {menuItems.map((item, index) => (
-            <div key={index} style={{ marginBottom: 12 }}>
-              <button className="nav-link" onClick={() => handleScrollTo(item.id)} style={{ width: '100%', textAlign: 'left' }}>
-                {item.label}
-              </button>
-            </div>
-          ))}
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: 12 }}>
-            <button onClick={() => setVisible(false)} style={{ background: 'transparent', border: 'none' }}>
-              <CloseOutlined style={{ fontSize: 22 }} />
+      {/* Mobile Drawer */}
+      <div className={`drawer ${visible ? 'open' : ''}`}>
+        {menuItems.map((item, index) => (
+          <div key={index} style={{ marginBottom: 12 }}>
+            <button
+              className="nav-link"
+              onClick={() => handleScrollTo(item.id)}
+              style={{ width: '100%', textAlign: 'left' }}
+            >
+              {item.label}
             </button>
           </div>
-        </div>
-      )}
+        ))}
+      </div>
     </>
   );
 };

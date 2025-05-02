@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'antd';
 import Hero from '../assets/hero.jpg';
 
 
@@ -21,9 +20,7 @@ const HeroSection = () => {
           We deliver consistent quality, timely logistics, and personalized sourcing solutions tailored to your brand.
         </div>
         <div className="hero-button">
-          <Button type="primary" size="large">
-            Download Now
-          </Button>
+        <button className="download-btn">Download Now</button>
         </div>
       </div>
     </div>

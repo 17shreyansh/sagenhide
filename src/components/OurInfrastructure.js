@@ -79,18 +79,7 @@ const OurInfrastructure = () => {
               Dedicated R&D Department – Continuously innovating in textures, styles, and functionality to meet evolving fashion trends and corporate demands.
             </p>
 
-            <Button
-              style={{
-                backgroundColor: "transparent",
-                border: "2px solid white",
-                color: "white",
-                fontWeight: "bold",
-                padding: "0 1rem",
-                marginTop: "1rem",
-              }}
-            >
-              Download Now
-            </Button>
+            <button className="download-btn" style={{color:"white", border:"white solid 1px"}}>Download Now</button>
           </div>
         </div>
       </div>
