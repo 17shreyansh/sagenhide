@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       <div
         style={{
-          height: 80,
+          height: "10vh",
           padding: '0 5%',
           display: 'flex',
           alignItems: 'center',
