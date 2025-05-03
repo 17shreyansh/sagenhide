@@ -87,7 +87,9 @@ const Footer = () => {
 
             {/* Bottom Bar */}
             <div className="footer-bottom-bar">
-                Lorem ipsum dolor sit amet, conse tetur adipis icing
+                <p style={{ textAlign: "center", margin: 0 }}>
+                    © {new Date().getFullYear()} Sagenhide. All rights reserved.
+                </p>
             </div>
         </div>
     );
