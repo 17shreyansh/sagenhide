@@ -18,6 +18,7 @@ const OurInfrastructure = () => {
         fontFamily: "'Montserrat', sans-serif",
         color: "#1E1E1E",
         overflow: "hidden",
+        
       }}
     >
       {/* Page Title */}
@@ -162,7 +163,7 @@ const OurInfrastructure = () => {
       <div
         style={{
           backgroundColor: "#D9C3AE",
-          padding: isMobile ? "1rem" : "2rem 0rem 0rem 1rem",
+          padding: isMobile ? "1rem" : "2rem 0rem 5rem 1rem",
         }}
       >
         <Row gutter={[24, 24]} align="middle" justify="space-between" style={{ padding: "0 0" }}>

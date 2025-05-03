@@ -471,3 +471,18 @@ html {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
+
+/* General styling for the footer links */
+.footer-quick-links-link {
+  color: #1E1E1E;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Optional: Add hover effect for better interaction */
+.footer-quick-links-link:hover {
+  color: #000000; /* You can change the color on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+

@@ -9,7 +9,6 @@ import {
 import logo from "../assets/logo.png";
 import iso from "../assets/iso.png";
 
-
 const Footer = () => {
     return (
         <div className="footer-container">
@@ -48,12 +47,14 @@ const Footer = () => {
                         <Row>
                             <Col span={12}>
                                 <ul className="footer-quick-links-list">
-                                    {["Home", "Our Story", "Products", "Our Standards", "Contact Us"].map((item) => (
-                                        <li
-                                            key={item}
-                                            className="footer-quick-links-item"
-                                        >
-                                            {item}
+                                    {["Home", "Our Story", "Products", "Our Infrastructure"].map((item) => (
+                                        <li key={item} className="footer-quick-links-item">
+                                            <a
+                                                href={`#${item === "Our Story" ? "our-story" : item === "Our Infrastructure" ? "infrastructure" : item.toLowerCase().replace(/\s+/g, '')}`}
+                                                className="footer-quick-links-link"
+                                            >
+                                                {item}
+                                            </a>
                                         </li>
                                     ))}
                                 </ul>
@@ -61,11 +62,13 @@ const Footer = () => {
                             <Col span={12}>
                                 <ul className="footer-quick-links-list">
                                     {["Privacy Policy", "Refund & Purchase", "Terms & Conditions", "Others"].map((item) => (
-                                        <li
-                                            key={item}
-                                            className="footer-quick-links-item"
-                                        >
-                                            {item}
+                                        <li key={item} className="footer-quick-links-item">
+                                            <a
+                                                href={`#${item.toLowerCase().replace(/\s+/g, '')}`}
+                                                className="footer-quick-links-link"
+                                            >
+                                                {item}
+                                            </a>
                                         </li>
                                     ))}
                                 </ul>
